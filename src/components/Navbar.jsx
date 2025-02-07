@@ -62,6 +62,7 @@ const Nav = () => {
         <a href="#skills" className="text-base sm:text-lg font-semibold hover:text-gray-400 transition-all duration-300">Skills</a>
         <a href="#contact" className="text-base sm:text-lg font-semibold hover:text-gray-400 transition-all duration-300">Contact Me</a>
         <a href="#contact" className="text-base sm:text-lg font-semibold bg-gradient-to-r from-yellow-500 to-red-500 hover:text-gray-400 bg-yellow-600 px-4 sm:px-5 py-1 rounded-lg transition-all duration-300">Hire Me</a>
+        
       </div>
 
       {isMenuOpen && (

@@ -43,7 +43,7 @@ const Project = () => {
       </div>
 
       <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
-        {/* Task Tracker Card */}
+       
         <div className="project-item w-full md:w-1/3">
           <div className="bg-black p-6 rounded-lg h-[350px] flex flex-col justify-between">
             <h3 className="text-xl font-semibold text-yellow-600 mb-4 text-center">

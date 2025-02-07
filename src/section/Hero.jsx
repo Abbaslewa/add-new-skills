@@ -4,7 +4,6 @@ import ew from "../assets/ew.png";
 import Navbar from '../components/Navbar';
 
 const Hero = () => {
-
   const elementRefs = {
     element1: useRef(null),
     element2: useRef(null),
@@ -13,7 +12,6 @@ const Hero = () => {
 
   useEffect(() => {
     const moveElements = (e) => {
-    
       const container = document.querySelector('.icon-container');
       if (!container) return;
 
@@ -21,7 +19,6 @@ const Hero = () => {
       const moveX = ((e.clientX - containerRect.left) / containerRect.width) * 15 - 7.5; // Adjust movement range inside container
       const moveY = ((e.clientY - containerRect.top) / containerRect.height) * 15 - 7.5; // Adjust movement range inside container
 
-     
       Object.values(elementRefs).forEach((elementRef) => {
         if (elementRef.current) {
           elementRef.current.style.transform = `translate(${moveX}px, ${moveY}px)`;
@@ -54,7 +51,7 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-3 sm:space-y-5 px-4 sm:px-6 md:px-9">
-        <h1 className="text-lg sm:text-2xl p-2 mt-7 font-extrabold text-white">Hi, I'm Abbas Omer 👋</h1>
+        <h1 className="text-lg sm:text-2xl p-2 mt-7 animate-pulse font-extrabold text-white">Hi, I'm Abbas Omer 👋</h1>
         <p className="lg:text-2xl font-semibold text-gray-300">
           I'm a full-stack developer, and I love creating innovative solutions.
         </p>
@@ -91,7 +88,6 @@ const Hero = () => {
         </div>
 
         <div className="flex justify-center md:justify-start space-x-5 mt-5 icon-container relative">
-         
           <div
             ref={elementRefs.element1}
             className="text-white w-10 h-10 p-2 bg-gradient-to-r from-gray-500 to-gray-700 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-110"
@@ -108,22 +104,16 @@ const Hero = () => {
 
         <div className="flex flex-col md:flex-row mt-5 space-y-3 md:space-y-0 md:space-x-7">
           <div className="text-center bg-white bg-opacity-10 text-white p-3 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-2">
-            <h3 className="text-lg font-bold text-white">
-              1
-            </h3>
+            <h3 className="text-lg font-bold text-white">1</h3>
             <p className="text-sm">Years Experience</p>
           </div>
           <div className="text-center bg-white bg-opacity-10 text-white p-3 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:-rotate-2">
-            <h3 className="text-lg font-bold text-white">
-              10
-            </h3>
+            <h3 className="text-lg font-bold text-white">10</h3>
             <p className="text-sm">Projects Done</p>
           </div>
           <div className="text-center bg-white bg-opacity-10 text-white p-3 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-2">
-            <h3 className="text-lg font-bold text-white">
-              10
-            </h3>
-            <p className="text-sm ">Happy Clients</p>
+            <h3 className="text-lg font-bold text-white">10</h3>
+            <p className="text-sm">Happy Clients</p>
           </div>
         </div>
       </div>

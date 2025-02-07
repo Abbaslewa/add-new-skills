@@ -1,97 +1,54 @@
-import  { useEffect, useState } from 'react';
-import AbbasImage from '../assets/Abbas.jpeg';
 
-const AboutMe = () => {
-  const [isInView, setIsInView] = useState(false);
+import fog from "../assets/fog.png";
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true);
-        } else {
-          setIsInView(false);
-        }
-      },
-      { threshold: 0.5 } 
-    );
-
-    const aboutSection = document.getElementById('about');
-    observer.observe(aboutSection);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
+function App() {
   return (
-    <section
-      id="about"
-      className="w-full py-6 bg-gray-700 h-auto lg:h-[100vh] flex items-center justify-center transition-transform duration-700 ease-out"
-    >
-      <div
-        className={`container mx-auto px-4 lg:px-8 mt-20 flex flex-col items-center justify-center transform ${
-          isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        } transition-all duration-700 ease-out`}
-      >
-        <h2 className="text-2xl sm:text-3xl text-center font-bold text-white mb-6">
-          About <span className="text-yellow-500">Me</span>
-        </h2>
+    <div id="about" className="relative min-h-screen bg-gray-700">
+      <div className="cloud cloud-1"></div>
+      <div className="cloud cloud-2"></div>
+      <div className="cloud cloud-3"></div>
 
-        <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-          <div
-            className={`flex flex-col items-center bg-gray-800 text-center rounded-lg shadow-lg w-full md:w-1/4 p-4 transform ${
-              isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-            } transition-all duration-700 ease-out`}
-          >
-            <div className="w-36 sm:w-48 h-36 sm:h-48 rounded-full overflow-hidden border-2 border-white bg-black mb-4">
-              <img
-                src={AbbasImage}
-                alt="Abbas Omer Hassan Suliman"
-                className="h-full object-cover w-full"
-              />
-            </div>
-            <h3 className="text-white text-xl sm:text-2xl font-bold mt-2">
-              Abbas Omer Hassan Suliman
-            </h3>
-            <p className="text-white mt-1 text-sm">Full-Stack Developer</p>
-            <p className="text-white text-sm">Frontend Specialist</p>
-            <p className="text-white text-sm">Backend Developer</p>
-          </div>
+      <div className="rain" style={{ top: '5%', left: '5%' }}></div>
+      <div className="rain" style={{ top: '15%', left: '25%' }}></div>
+      <div className="rain" style={{ top: '25%', left: '35%' }}></div>
+      <div className="rain" style={{ top: '35%', left: '45%' }}></div>
+      <div className="rain" style={{ top: '45%', left: '55%' }}></div>
+      <div className="rain" style={{ top: '55%', left: '65%' }}></div>
+      <div className="rain" style={{ top: '65%', left: '75%' }}></div>
+      <div className="rain" style={{ top: '75%', left: '85%' }}></div>
+      <div className="rain" style={{ top: '85%', left: '15%' }}></div>
+      <div className="rain" style={{ top: '95%', left: '20%' }}></div>
 
-          <div
-            className={`flex flex-col w-full md:w-2/3 bg-gray-800 p-4 sm:p-8 rounded-lg shadow-lg transform ${
-              isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-            } transition-all duration-700 ease-out`}
-          >
-            <div className="flex justify-center md:justify-start space-x-3 border-b border-gray-600 pb-2 mb-3">
-              <a
-                href="#project"
-                className="text-yellow-500 font-bold hover:underline text-sm"
-              >
-                Project
-              </a>
-              <a
-                href="#education"
-                className="text-white font-bold hover:text-yellow-500 hover:underline text-sm"
-              >
-                Education
-              </a>
-            </div>
+      <h1 className="text-white font-extrabold text-center pt-20 text-4xl">
+        About Me
+      </h1>
 
-            <div className="text-white">
-              <p className="leading-relaxed font-bold text-sm sm:text-base mb-4 text-gray-300">
-                Hi, I'm Abbas Omer Hassan Suliman, a passionate full-stack developer from Sudan. With a strong focus on building dynamic and responsive web applications, I specialize in front-end development using React and TailwindCSS, while also working with back-end technologies like Node.js and MongoDB.
-              </p>
-              <p className="leading-relaxed font-bold text-sm sm:text-base mb-4 text-gray-300">
-                I'm driven by the challenge of solving complex problems through code and always seek to learn new technologies and improve my skills. I love contributing to open-source projects and experimenting with cutting-edge design patterns. My goal is to create engaging user experiences and seamless interactions across all platforms.
-              </p>
-            </div>
-          </div>
+      <div className="flex flex-col md:flex-row items-center justify-center mt-16 px-4 md:px-0">
+        <div className=" mx-auto text-gray-300 w-full mb-8 md:mb-0 md:pr-8 p-6 rounded-lg shadow-lg">
+          <p className="font-bold text-sm sm:text-base mb-4">
+            Hi, I'm Abbas Omer Hassan Suliman, a passionate full-stack developer from Sudan. I specialize in crafting dynamic and responsive web applications, with a strong foundation in front-end development using React and TailwindCSS. Additionally, I work with back-end technologies such as Node.js and MongoDB, ensuring seamless integration of all components.
+          </p>
+          <p className="font-bold text-sm sm:text-base mb-4">
+            I'm motivated by the challenge of solving complex problems through code, and I’m always on the lookout for new technologies to explore and implement. I actively contribute to open-source projects and enjoy experimenting with cutting-edge design patterns. My goal is to create intuitive and engaging user experiences, ensuring seamless interactions across platforms.
+          </p>
+        
+         
+            <a href='#project' className="mt-4 px-8 py-3 bg-gray-800 border border-yellow-700 lg:w-[20%] text-white rounded-lg hover:bg-gray-600 transition">
+              Project
+            </a>
+         
+        </div>
+
+        <div className="md:w-1/2 flex justify-center mt-">
+          <img
+            src={fog}
+            alt="fog"
+            className="lg:w-[350px] lg:h-[350px] w-[200px] h-[200px] max-w-md rounded-full bg-gray-800 shadow-xl transform hover:scale-105 transition-all"
+          />
         </div>
       </div>
-    </section>
+    </div>
   );
-};
+}
 
-export default AboutMe;
+export default App;
