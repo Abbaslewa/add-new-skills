@@ -76,8 +76,8 @@ const Hero = () => {
             Hire Me
           </a>
           <a
-            href="full.pdf"
-            download="full.pdf"
+            href="Full.pdf"
+            download="Full.pdf"
             className="hidden md:block border border-gray-200 bg-gray-900 hover:bg-gray-800 text-white px-3 py-1.5 rounded-lg shadow-xl backdrop-blur-md bg-opacity-30 hover:scale-105 transition-all duration-300 ease-in-out"
             aria-label="Download Abbas's Resume"
           >
@@ -88,8 +88,8 @@ const Hero = () => {
 
         <div className="md:hidden flex justify-center mt-3">
           <a
-            href="full.pdf"
-            download="full.pdf"
+            href="Full.pdf"
+            download="Full.pdf"
             className="bg-gray-900 hover:bg-gray-800 text-white px-3 py-1.5 rounded-lg shadow-lg transition-colors duration-300 ease-in-out flex items-center animate-bounce"
             aria-label="Download Abbas's Resume"
           >
