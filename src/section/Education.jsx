@@ -19,8 +19,8 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <div id="education" className="flex flex-col items-center justify-center min-h-screen bg-gray-800 py-16 px-6">
-      <div className="max-w-4xl w-full text-gray-100 rounded-lg shadow-lg p-8 bg-gray-800">
+    <div id="education" className="flex flex-col items-center justify-center min-h-screen  py-16 px-6">
+      <div className="max-w-4xl w-full text-gray-100 rounded-lg shadow-lg p-8 ">
         
         <h2 className="text-3xl font-semibold text-center text-yellow-700 mb-8">Certifications & Education</h2>
         

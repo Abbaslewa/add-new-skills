@@ -37,7 +37,7 @@ const Nav = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full py-4 flex justify-between items-center px-4 sm:px-8 z-20 transition-all duration-300 ${
-        isScrolled ? 'bg-black bg-opacity-80 shadow-lg' : 'bg-transparent'
+        isScrolled ? 'bg-gray-800 bg-opacity-80 shadow-lg' : 'bg-transparent'
       }`}
     >
       <a href="/" className="text-yellow-600 text-2xl text-center rounded-lg w-[110px] border border-yellow-600 sm:text-3xl font-bold bg-gradient-to-r from-yellow-500 to-red-500 text-transparent bg-clip-text">

@@ -9,7 +9,7 @@ const ContactMe = () => {
   return (
     <div
       id="contact"
-      className="relative min-h-screen flex border-e-rose-50 flex-col sm:flex-row justify-center items-center bg-gray-800 overflow-hidden py-6 sm:py-0"
+      className="relative min-h-screen flex border-e-rose-50 flex-col sm:flex-row justify-center items-center  overflow-hidden py-6 sm:py-0"
      
     >
       <div
