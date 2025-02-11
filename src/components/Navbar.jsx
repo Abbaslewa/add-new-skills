@@ -40,11 +40,11 @@ const Nav = () => {
         isScrolled ? 'bg-gray-800 bg-opacity-80 shadow-lg' : 'bg-transparent'
       }`}
     >
-      <a href="/" className="text-yellow-600 text-2xl text-center rounded-lg w-[110px] border border-yellow-600 sm:text-3xl font-bold bg-gradient-to-r from-yellow-500 to-red-500 text-transparent bg-clip-text">
+      <a href="/" className=" text-2xl text-center rounded-lg w-[110px] border border-[#00fffc] text-[#00fffc] sm:text-3xl font-bold ">
         ABBAS
       </a>
       <button onClick={toggleDarkMode} className="text-2xl text-white mr-4 md:mr-8 focus:outline-none">
-        {isDarkMode ? <FaSun className="text-yellow-400" /> : <FaMoon />}
+        {isDarkMode ? <FaSun className="text-[#00fffc] " /> : <FaMoon />}
       </button>
 
    
@@ -61,7 +61,7 @@ const Nav = () => {
         <a href="#about" className="text-base sm:text-lg font-semibold hover:text-gray-400 transition-all duration-300">About Me</a>
         <a href="#skills" className="text-base sm:text-lg font-semibold hover:text-gray-400 transition-all duration-300">Skills</a>
         <a href="#contact" className="text-base sm:text-lg font-semibold hover:text-gray-400 transition-all duration-300">Contact Me</a>
-        <a href="#contact" className="text-base sm:text-lg font-semibold bg-gradient-to-r from-yellow-500 to-red-500 hover:text-gray-400 bg-yellow-600 px-4 sm:px-5 py-1 rounded-lg transition-all duration-300">Hire Me</a>
+        <a href="#contact" className="text-base sm:text-lg font-semibold bg-[#00fffc] hover:text-gray-400 px-4 sm:px-5 py-1 rounded-lg transition-all duration-300">Hire Me</a>
         
       </div>
 

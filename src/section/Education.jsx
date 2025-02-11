@@ -22,15 +22,15 @@ const Certifications = () => {
     <div id="education" className="flex flex-col items-center justify-center min-h-screen  py-16 px-6">
       <div className="max-w-4xl w-full text-gray-100 rounded-lg shadow-lg p-8 ">
         
-        <h2 className="text-3xl font-semibold text-center text-yellow-700 mb-8">Certifications & Education</h2>
+        <h2 className="text-3xl font-semibold text-center text-white mb-8">Certifications & Education</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {certifications.map((cert, index) => (
             <div
               key={index}
-              className="bg-gray-900 p-6 hover:animate-pulse rounded-lg shadow-xl border border-gray-700 hover:border-yellow-700 transition-all duration-300 ease-in-out"
+              className="bg-gray-900 p-6 hover:animate-pulse rounded-lg shadow-xl border border-gray-700 hover:border-[#00fffc] transition-all duration-300 ease-in-out"
             >
-              <h3 className="text-xl font-medium text-yellow-700 mb-2">{cert.title}</h3>
+              <h3 className="text-xl font-medium text-white mb-2">{cert.title}</h3>
               <p className="text-gray-300 text-sm">{cert.description}</p>
             </div>
           ))}

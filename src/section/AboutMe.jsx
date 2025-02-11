@@ -35,7 +35,7 @@ const AboutMe = () => {
         } transition-all duration-700 ease-out`}
       >
         <h2 className="text-2xl sm:text-3xl text-center font-bold text-white mb-6">
-          About <span className="text-yellow-500">Me</span>
+          About <span className="text-[#00fffc]">Me</span>
         </h2>
 
         <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
@@ -67,7 +67,7 @@ const AboutMe = () => {
             <div className="flex justify-center md:justify-start space-x-3 border-b border-gray-600 pb-2 mb-3">
               <a
                 href="#project"
-                className="text-yellow-500 font-bold hover:underline text-sm"
+                className="text-[#00fffc] font-bold hover:underline text-sm"
               >
                 Project
               </a>

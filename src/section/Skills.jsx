@@ -57,7 +57,7 @@ const SkillsDisplay = () => {
               progress={skill.progress}
               className="text-sm group transition-all duration-300 hover:bg-gray-800"
             >
-              <div className="w-full bg-gray-300 rounded-full h-2 mt-2 group-hover:bg-gradient-to-r group-hover:from-yellow-500 group-hover:to-red-600">
+              <div className="w-full bg-gray-300 rounded-full h-2 mt-2 group-hover:bg-gradient-to-r  group-hover:from-[#00fffc] group-hover:to-red-600">
                 <div
                   className="bg-gradient-to-r from-yellow-400 to-red-500 h-2 rounded-full transition-all duration-500"
                   style={{ width: `${skill.progress}%` }}

@@ -38,7 +38,7 @@ const Project = () => {
     >
       <div className="text-center mb-12">
         <h2 className="text-2xl sm:text-3xl font-bold mt-10 text-white">
-          My <span className="text-yellow-700">Projects</span>
+          My <span className="text-white">Projects</span>
         </h2>
       </div>
 
@@ -46,7 +46,7 @@ const Project = () => {
        
         <div className="project-item w-full md:w-1/3">
           <div className="bg-gray-900 p-6 rounded-lg h-[350px] flex flex-col justify-between">
-            <h3 className="text-xl font-semibold text-yellow-600 mb-4 text-center">
+            <h3 className="text-xl font-semibold text-white mb-4 text-center">
               Task Tracker
             </h3>
            
@@ -67,7 +67,7 @@ const Project = () => {
                  <p className="text-sm text-center text-gray-100 mb-4">
               A task management app to organize your daily activities.
             </p>
-                <button className="bg-yellow-700 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded">
+                <button className="border border-[#00fffc] text-white font-semibold py-2 px-4 rounded">
                   View Project
                 </button>
               </a>
@@ -77,12 +77,12 @@ const Project = () => {
 
         <div className="project-item w-full md:w-1/3">
           <div className="bg-gray-900 p-6 rounded-lg h-full flex flex-col justify-between">
-            <h3 className="text-xl font-semibold text-yellow-600 mb-4 text-center">
+            <h3 className="text-xl font-semibold text-white mb-4 text-center">
               Portfolio
             </h3>
             
             <a
-              href="https://daynamc-component.vercel.app/#contact"
+              href="https://abbas-omer.vercel.app/#contact"
               target="_blank"
               rel="noopener noreferrer"
               className="block mb-4"
@@ -98,7 +98,7 @@ const Project = () => {
                 <p className="text-sm text-center text-gray-100 mb-4">
               A modern and responsive personal portfolio website.
             </p>
-                <button className="bg-yellow-700 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded">
+                <button className="border  text-white border-[#00fffc] font-semibold py-2 px-4 rounded">
                   View Project
                 </button>
               </a>
@@ -108,7 +108,7 @@ const Project = () => {
 
         <div className="project-item w-full md:w-1/3">
           <div className="bg-gray-900 p-6 rounded-lg h-[350px] flex flex-col justify-between">
-            <h3 className="text-xl font-semibold text-yellow-600 mb-4 text-center">
+            <h3 className="text-xl font-semibold text-white mb-4 text-center">
               Bookmark
             </h3>
             
@@ -129,7 +129,7 @@ const Project = () => {
                 <p className="text-sm text-center text-gray-100 mb-4">
               A bookmark manager for easy access to your favorite sites.
             </p>
-                <button className="bg-yellow-700 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded">
+                <button className="border border-[#00fffc] text-white font-semibold py-2 px-4 rounded">
                   View Project
                 </button>
               </a>
