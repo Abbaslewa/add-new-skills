@@ -40,11 +40,11 @@ const AboutMe = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
           <div
-            className={`flex flex-col items-center bg-gray-900 text-center rounded-lg shadow-lg w-full md:w-1/4 p-4 transform ${
+            className={`flex flex-col items-center  bg-gray-900 text-center rounded-lg shadow-lg w-full md:w-1/4 p-4 transform ${
               isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             } transition-all duration-700 ease-out`}
           >
-            <div className="w-36 sm:w-48 h-36 sm:h-48 rounded-full overflow-hidden border-2 border-white bg-black mb-4">
+            <div className="w-36 sm:w-48  h-36 sm:h-48 rounded-full overflow-hidden border-2 border-white bg-black mb-4">
               <img
                 src={AbbasImage}
                 alt="Abbas Omer Hassan Suliman"

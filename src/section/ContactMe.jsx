@@ -76,7 +76,7 @@ const ContactMe = () => {
 
           <button
             type="submit"
-            className="bg-[#00fffc]  p-2 sm:p-3 rounded-lg w-full text-sm sm:text-md font-semibold text-white transition-colors duration-300 ease-in-out focus:ring-4 focus:ring-green-600 shadow-lg hover:shadow-xl "
+            className=" border border-gray-700  p-2 sm:p-3 rounded-lg w-full text-sm sm:text-md font-semibold text-white transition-colors duration-300 ease-in-out focus:ring-4 focus:ring-green-600 shadow-lg hover:shadow-xl "
           >
             Submit
           </button>
