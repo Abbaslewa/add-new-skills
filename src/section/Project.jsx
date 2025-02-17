@@ -38,7 +38,7 @@ const Project = () => {
     >
       <div className="text-center mb-12">
         <h2 className="text-2xl sm:text-3xl font-bold mt-10 text-white">
-          My <span className="text-white">Projects</span>
+          My <span className="text-[#00fffc]">Projects</span>
         </h2>
       </div>
 
@@ -63,10 +63,10 @@ const Project = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p className="text-sm text-center text-gray-100 mb-4">
+                <p className="text-sm text-center font-extrabold text-gray-100 mb-4">
                   A task management app to organize your daily activities.
                 </p>
-                <button className="relative border border-[#00fffc] text-white font-semibold py-2 px-4 rounded overflow-hidden group">
+                <button className="relative border  border-[#00fffc] text-white font-semibold py-2 px-4 rounded overflow-hidden group">
                   <span className="relative z-10 transition-colors duration-300 group-hover:text-black">
                     View Project
                   </span>
@@ -97,7 +97,7 @@ const Project = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p className="text-sm text-center text-gray-100 mb-4">
+                <p className="text-sm font-extrabold text-center text-gray-100 mb-4">
                   A modern and responsive personal portfolio website.
                 </p>
                 <button className="relative border border-[#00fffc] text-white font-semibold py-2 px-4 rounded overflow-hidden group">
@@ -131,7 +131,7 @@ const Project = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p className="text-sm text-center text-gray-100 mb-4">
+                <p className="text-sm font-extrabold text-center text-gray-100 mb-4">
                   A bookmark manager for easy access to your favorite sites.
                 </p>
                 <button className="relative border border-[#00fffc] text-white font-semibold py-2 px-4 rounded overflow-hidden group">

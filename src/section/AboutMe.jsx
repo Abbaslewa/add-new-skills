@@ -67,13 +67,13 @@ const AboutMe = () => {
             <div className="flex justify-center md:justify-start space-x-3 border-b border-gray-600 pb-2 mb-3">
               <a
                 href="#project"
-                className="text-[#00fffc] font-bold hover:underline text-sm"
+                className="text-[#00fffc] font-extrabold hover:underline text-sm"
               >
                 Project
               </a>
               <a
                 href="#education"
-                className="text-white font-bold hover:text-yellow-500 hover:underline text-sm"
+                className="text-white hover:text-[#00fffc] font-extrabold hover:underline text-sm"
               >
                 Education
               </a>

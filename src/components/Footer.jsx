@@ -1,43 +1,44 @@
 import { Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
-    return (
-      <footer className="bg-black text-gray-300 py-10 px-5 md:px-10 flex flex-col items-center justify-center shadow-inner space-y-6">
-        <div className="flex flex-col items-center space-y-2 mb-6">
-          <p className="text-2xl font-bold text-white">Abbas Lewa</p>
-          <p className="text-sm text-gray-400 italic">Full Stack Developer</p>
-        </div>
+  return (
+    <footer className="relative bg-gradient-to-t from-gray-800 via-gray-900 to-gray-800 text-gray-300 py-12 px-5 md:px-10 flex flex-col items-center justify-center shadow-2xl space-y-10 overflow-hidden">
+      {/* Enhanced water-like background animation */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        <div className="water-background"></div>
+      </div>
 
-        <div className="flex flex-col items-center space-y-4 mb-6">
-          <div className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors duration-300 ease-in-out">
-            <Mail className="w-5 h-5" />
-            <a 
-              href="mailto:abbasomerhassn@gmail.com" 
-              className="text-sm"
-            >
-              abbasomerhassn@gmail.com
-            </a>
-          </div>
-          <div className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors duration-300 ease-in-out">
-            <Phone className="w-5 h-5" />
-            <a 
-              href="tel:0794294091" 
-              className="text-sm"
-            >
-              07 94294091
-            </a>
-          </div>
-        </div>
-
-        <div className="h-0.5 w-full max-w-xs bg-gradient-to-r from-gray-300 via-gray-400 to-gray-500 mb-4"></div>
-
-        <p className="text-xs text-gray-500">
-          © {currentYear} <span className="font-semibold text-white">Abbas Lewa</span>. All rights reserved.
+      <div className="relative z-10 flex flex-col items-center space-y-3 mb-8">
+        <p className="text-4xl font-extrabold text-white glowing-text animate-smooth-sneak">
+          Abbas Lewa
         </p>
-      </footer>
-    );
-}
+        <p className="text-lg text-gray-300 italic">Full Stack Developer</p>
+      </div>
+
+      <div className="relative z-10 flex flex-col items-center space-y-6 mb-8">
+        <div className="flex items-center space-x-4 text-gray-400 hover:text-white transition-colors duration-300 ease-in-out">
+          <Mail className="w-6 h-6" />
+          <a href="mailto:abbasomerhassn@gmail.com" className="text-lg">
+            abbasomerhassn@gmail.com
+          </a>
+        </div>
+        <div className="flex items-center space-x-4 text-gray-400 hover:text-white transition-colors duration-300 ease-in-out">
+          <Phone className="w-6 h-6" />
+          <a href="tel:0794294091" className="text-lg">
+            07 94294091
+          </a>
+        </div>
+      </div>
+
+      <div className="relative z-10 h-0.5 w-full max-w-sm bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 mb-6"></div>
+
+      <p className="relative z-10 text-sm text-gray-400">
+        © {currentYear} <span className="font-semibold text-white">Abbas Lewa</span>. All rights reserved.
+      </p>
+    </footer>
+  );
+};
 
 export default Footer;
