@@ -1,6 +1,6 @@
 import { FaDownload } from 'react-icons/fa';
 import { useEffect } from 'react';
-import ew from '../assets/ew.png';
+import Abbas from '../assets/Abbas.jpeg';
 
 const Hero = () => {
   useEffect(() => {
@@ -43,14 +43,14 @@ const Hero = () => {
     <div id='home'>
       <main
         id="app"
-        className="relative flex flex-col md:flex-row-reverse items-center justify-center w-full min-h-screen py-10 px-4 sm:px-6 md:px-14 lg:px-20 bg-gray-00 h-screen"
+        className="relative flex gap-x-7 flex-col md:flex-row-reverse items-center justify-center w-full min-h-screen py-10 px-4 sm:px-6 md:px-14 lg:px-20 bg-gray-00 h-screen"
       >
         <div className="relative top-20 z-10 w-full md:w-1/2 flex justify-center mb-6 md:mb-0">
-          <div className="relative  w-[140px] h-[140px] sm:w-[280px] sm:h-[280px] md:w-[390px] md:h-[390px] shadow-[0_10px_20px_rgba(0,255,252,0.6)] p-4 md:p-5 bg-gray-900 rounded-full ml-4 ">
+          <div className="relative -top-7 w-[140px] h-[140px] sm:w-[280px] sm:h-[280px] md:w-[390px] md:h-[390px]  p-4 md:p-5rounded-full ml-4 ">
             <img
-              src={ew}
+              src={Abbas}
               alt="Abbas"
-              className="object-cover absolute w-[180px] h-[180px] mx-auto -top-[40px] lg:w-[470px] lg:h-[490px] lg:-top-[100px] -rotate-3 rounded-b-full"
+              className="object-cover w-full h-full  rounded-full shadow-[0_10px_20px_rgba(0,255,252,0.6)]"
             />
           </div>
         </div>
@@ -62,44 +62,35 @@ const Hero = () => {
           </p>
 
           <div className="flex space-x-3">
-          <div className="flex space-x-3">
-           
-  <a
-    href="#contact"
-    className="relative inline-block px-3  border border-gray-100 sm:px-5 py-1.5 text-white font-semibold rounded-lg shadow-lg duration-300 hover:scale-105 transition-all custom-button"
-    aria-label="Hire Abbas"
-  >
-    Hire Me
-  </a>
-  <a
-    href="Full.pdf"
-    download="Full.pdf"
-    className="relative hidden md:block border border-gray-200  px-3 py-1.5 text-white rounded-lg shadow-xl backdrop-blur-md hover:scale-105 transition-all duration-300 ease-in-out custom-button"
-    aria-label="Download Abbas's Resume"
-  >
-    <FaDownload className="inline mr-1.5" />
-    Download CV
-  </a>
-</div>
-
-
-
-</div>
-
-
-          <div className="md:hidden flex justify-center mt-3"></div>
+            <a
+              href="#contact"
+              className="relative inline-block px-3  border border-gray-100 sm:px-5 py-1.5 text-white font-semibold rounded-lg shadow-lg duration-300 hover:scale-105 transition-all custom-button"
+              aria-label="Hire Abbas"
+            >
+              Hire Me
+            </a>
+            <a
+              href="Full.pdf"
+              download="Full.pdf"
+              className="relative hidden md:block border border-gray-200  px-3 py-1.5 text-white rounded-lg shadow-xl backdrop-blur-md hover:scale-105 transition-all duration-300 ease-in-out custom-button"
+              aria-label="Download Abbas's Resume"
+            >
+              <FaDownload className="inline mr-1.5" />
+              Download CV
+            </a>
+          </div>
 
           <div className="flex flex-col md:flex-row mt-5 space-y-3 md:space-y-0 md:space-x-7">
             <div className="text-center bg-white bg-opacity-20 text-white p-3 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-2">
-              <h3 className="text-lg font-bold ">1</h3>
+              <h3 className="text-lg font-bold">1</h3>
               <p className="text-sm">Years Experience</p>
             </div>
             <div className="text-center bg-white bg-opacity-20 text-white p-3 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:-rotate-2">
-              <h3 className="text-lg font-bold ">10</h3>
+              <h3 className="text-lg font-bold">10</h3>
               <p className="text-sm">Projects Done</p>
             </div>
             <div className="text-center bg-white bg-opacity-20 text-white p-3 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-2">
-              <h3 className="text-lg font-bold ">10</h3>
+              <h3 className="text-lg font-bold">10</h3>
               <p className="text-sm">Happy Clients</p>
             </div>
           </div>
