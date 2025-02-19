@@ -56,7 +56,7 @@ const Hero = () => {
         </div>
 
         <div className="relative z-10 w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-3 sm:space-y-5 px-4 sm:px-6 md:px-9">
-          <h1 className="text-lg sm:text-2xl p-2 mt-16 font-extrabold text-white">Hi, I'm Abbas Omer 👋</h1>
+          <h1 className="text-lg sm:text-2xl text-[#00fffc] p-2 mt-16 font-extrabold ">Hi, I'm Abbas Omer 👋</h1>
           <p className="lg:text-2xl font-semibold text-transparent bg-clip-text text-white">
             I'm a full-stack developer, and I love creating innovative solutions.
           </p>
@@ -82,15 +82,15 @@ const Hero = () => {
 
           <div className="flex flex-col md:flex-row mt-5 space-y-3 md:space-y-0 md:space-x-7">
             <div className="text-center bg-white bg-opacity-20 text-white p-3 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-2">
-              <h3 className="text-lg font-bold">1</h3>
+              <h3 className="text-lg font-bold text-[#00fffc]">1</h3>
               <p className="text-sm">Years Experience</p>
             </div>
             <div className="text-center bg-white bg-opacity-20 text-white p-3 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:-rotate-2">
-              <h3 className="text-lg font-bold">10</h3>
+              <h3 className="text-lg font-bold text-[#00fffc]">10</h3>
               <p className="text-sm">Projects Done</p>
             </div>
             <div className="text-center bg-white bg-opacity-20 text-white p-3 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:rotate-2">
-              <h3 className="text-lg font-bold">10</h3>
+              <h3 className="text-lg font-bold text-[#00fffc]">10</h3>
               <p className="text-sm">Happy Clients</p>
             </div>
           </div>
